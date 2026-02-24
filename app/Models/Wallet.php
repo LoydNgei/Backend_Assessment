@@ -13,7 +13,7 @@ class Wallet extends Model
 
     public function user()
     {
-        return $this->belongsTo(Wallet::class);
+        return $this->belongsTo(User::class);
     }
 
     public function transactions()
