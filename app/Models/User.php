@@ -46,6 +46,7 @@ class User extends Authenticatable
         ];
     }
 
+    // A user can have multiple wallets
     public function wallets()
     {
         return $this->hasMany(Wallet::class);
